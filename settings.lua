@@ -9,10 +9,12 @@ data:extend({
         order = "01"
     },
     {
-        type = "bool-setting",
+        type = "int-setting",
         name = "faster robots",
         setting_type = "runtime-global",
-        default_value = false,
+        default_value = 0,
+        minimum_value = 0,
+        maximum_value = 4,
         order = "02"
     }
 })
