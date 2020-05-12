@@ -84,12 +84,14 @@ end
 	end
 
 	local ArmorInventory = Player.get_inventory(defines.inventory.character_armor)
-	local n = ArmorInventory.insert{name=ItemPrototypes["Armor"],count=1}
-	if(n>0)then -- we actually equipped the armor
-		local grid=ArmorInventory[1].grid
-		for i,module in pairs(ArmorModules) do
-			for y = 1, module.Count, 1 do
-				grid.put({name=module.Name})
+	if not(ArmorInventory == nil) then
+		local n = ArmorInventory.insert{name=ItemPrototypes["Armor"],count=1}
+		if(n>0)then -- we actually equipped the armor
+			local grid=ArmorInventory[1].grid
+			for i,module in pairs(ArmorModules) do
+				for y = 1, module.Count, 1 do
+					grid.put({name=module.Name})
+				end
 			end
 		end
 	end
