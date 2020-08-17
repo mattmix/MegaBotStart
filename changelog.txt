@@ -1,0 +1,13 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.20.0
+Date: 8. 15. 2020
+  Bugfixes:
+    - Compatabile with 1.0
+---------------------------------------------------------------------------------------------------
+Version: 0.18.1
+Date: 5. 12. 2020
+  Features:
+    - Expanded functionality to work with Bob's mods and Krastorio 2
+    - New user settings for more robots and researching robot speed
+  Bugfixes:
+    - Should not cause sandbox to crash due to a player being absent
